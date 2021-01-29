@@ -50,7 +50,7 @@
             newValue=0;
             newValueOnline = 0;
             presencial.setAttribute('value', valor)
-            presencial.setAttribute('value', valorOnline)
+            online.setAttribute('value', valorOnline)
             inputPresencial.setAttribute('value', valor+ " " + "mxn")
             inputOnline.setAttribute('value', valorOnline+ " " + "mxn")
             console.log(newValue)
@@ -67,13 +67,17 @@
 
             boxValue.setAttribute('value', index);
             let newValue = parseInt(presencial.value) - valor + " " + "mxn";
+            let newValueOnline = parseInt(online.value) - valorOnline + " " + "mxn";
             console.log(newValue)
             presencial.setAttribute('value', newValue)
             inputPresencial.setAttribute('value', newValue)
+            online.setAttribute('value', newValueOnline)
+            inputOnline.setAttribute('value', newValueOnline)
         } else {
             index = 1
             boxValue.setAttribute('value', index);
             inputPresencial.setAttribute('value', valor + " " + "mxn")
+            inputOnline.setAttribute('value', valorOnline + " " + "mxn")
         }
     }
 
