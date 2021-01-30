@@ -20,11 +20,15 @@
 
 
     let index = 1;
-    const valor = 250
+    const valor = 450
+    const valorOnline = 350
     let presencial = document.getElementById("presencial")
+    let online = document.getElementById("online")
     let boxValue = document.getElementById("box")
     let inputPresencial = document.getElementById("presencialInput")
+    let inputOnline = document.getElementById("onlineInput")
     let newValue = 0;
+    let newValueOnline = 0;
     function nextNum() {
         index += 1;
        console.log(index)
@@ -32,16 +36,23 @@
 
             boxValue.setAttribute('value', index);
             newValue = parseInt(presencial.value) + valor + " " + "mxn";
+            newValueOnline = parseInt(online.value) + valorOnline + " " + "mxn";
             console.log(newValue)
+            console.log(newValueOnline)
             presencial.setAttribute('value', newValue)
             inputPresencial.setAttribute('value', newValue)
+            online.setAttribute('value', newValueOnline)
+            inputOnline.setAttribute('value', newValueOnline)
         } else {
             index = 1
             boxValue.setAttribute('value', index);
             
             newValue=0;
+            newValueOnline = 0;
             presencial.setAttribute('value', valor)
+            online.setAttribute('value', valorOnline)
             inputPresencial.setAttribute('value', valor+ " " + "mxn")
+            inputOnline.setAttribute('value', valorOnline+ " " + "mxn")
             console.log(newValue)
         }
 
@@ -56,13 +67,17 @@
 
             boxValue.setAttribute('value', index);
             let newValue = parseInt(presencial.value) - valor + " " + "mxn";
+            let newValueOnline = parseInt(online.value) - valorOnline + " " + "mxn";
             console.log(newValue)
             presencial.setAttribute('value', newValue)
             inputPresencial.setAttribute('value', newValue)
+            online.setAttribute('value', newValueOnline)
+            inputOnline.setAttribute('value', newValueOnline)
         } else {
             index = 1
             boxValue.setAttribute('value', index);
             inputPresencial.setAttribute('value', valor + " " + "mxn")
+            inputOnline.setAttribute('value', valorOnline + " " + "mxn")
         }
     }
 
@@ -104,12 +119,3 @@
         }
 
     }
-    
-    
-    
-    
-    
-
-   
-    
-    

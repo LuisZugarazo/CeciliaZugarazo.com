@@ -42,7 +42,8 @@
     background-image: url("fondo.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    height: 670px;
+/*    height: 670px;*/
+    height: 100vh;
 }
 #header{
     position: fixed;
@@ -329,9 +330,10 @@ hr{
 .descarga {
     
     color:var(--color_1);
-    padding: 0px 15px;
+    padding: 7px 50px;
     text-decoration: none;
     background: white ;
+    
     border: 1.4px solid var(--color_1) ;
     transition: all .3s;
     height: px;
@@ -441,7 +443,7 @@ hr{
 .modal-footer{
     background:  ;
     display: flex;
-    justify-content: center;
+    justify-content: flex-s;
     align-items: center;
     width: ;
     height: 80px;
@@ -1154,13 +1156,15 @@ i{
     font-size:35px;
     color:var(--color_1);
     margin: 15px 0 10px 0;
+    background: ;
+    text-align: center;
 }
 .instrucciones p{
     margin: 0px 0 0px 0;
 }
 .intrucciones_bullets{
     padding: 5px 0 0px 0;
-    color: 
+    background: 
 }
 .intrucciones_ultimo{
     padding-bottom: 20px;
@@ -1277,13 +1281,16 @@ i{
     font-family: 'Roboto', sans-serif;
 }
 .modal-footer-sesiones-individuales{
-    height: 200px;
-    padding: 20px 0 0 0;
+    padding:;
+    background: ;
+    display: ;
+    height: 50px
     
 }
 .fa-chevron-left-sesiones,.fa-chevron-right-sesiones{
     color: white;
     padding-top: 25px;
+    cursor: pointer
 }
 .sesiones_img2{
     display: none
@@ -1385,6 +1392,23 @@ i{
 #foto_talleres_mobil{
     display: none;
 }
+#box{
+    transform: none;
+    background: white;
+    color: var(--color_1);
+    display: ;
+    cursor: default;
+    font-weight: 600;
+    font-size: 
+}
+
+ .btn_comprar_horas{
+    margin: 0px 0px 0px 0;
+    background: ;
+    padding: 15px 0px ;
+    text-align: center;
+    margin-top: 5px;
+    }
 
 /*Escritorio normal*/
 @media only screen and (min-width: 992px) and (max-width: 1200px){
@@ -1992,8 +2016,18 @@ header nav a:hover{
         font-size: 15.5px;
         line-height: 25px;
     }
-            
-        
+    .modal-footer{
+        background: ;
+        width: 93%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+    } 
+    .descarga{
+        background: ;
+        padding: 5px 20px;
+        margin: 0 0 0 15px;
+    }
         
 }
 
@@ -2559,19 +2593,7 @@ ul li .question{
     
 }
    
-    .modal-content{
-     border-radius: ;
-    border-color: transparent;
-        width: ;
-    height: 900px;
-        background:
-}
-.modal-header{
-    height: 50px;
-    background:;
-    display: flex;
-    align-items: center; 
-}
+   
 
     .horas_y_precios{
     width: 85%;
@@ -2645,10 +2667,7 @@ ul li .question{
         width: ;
         margin-top: 15px;
     }
-    .modal-footer-tablet{
-        height: 2000px;
-        display: block
-    }
+    
     #smart-button-container{
         margin: 0 auto;
         display: flex;
@@ -2662,6 +2681,30 @@ ul li .question{
         width: 100%;
        
     }
+    .modal-footer-tablet{
+        background:;
+        display: flex;
+        justify-content: space-between;
+        height: px    } 
+    .descarga{
+        background: ;
+        padding: 7px 0px;
+        margin: 0;
+        width: 48%
+    }
+    .modal-footer-tablet{
+        width: 94%;
+        background: ;
+        margin: 0 auto
+        
+    }
+     
+.modal-header{
+    height: 50px;
+    background:;
+    display: flex;
+    align-items: center; 
+}
 }
 
 /*Mobil*/
@@ -2679,12 +2722,12 @@ ul li .question{
     }
     .fondo{
         background-image: url("fondo_mobile.jpg");
-        height: 830px
+        height: 100vh
     }
     .nav_open{
     display:flex ;
     z-index: 222;
-        padding: 7px 0px;
+        padding: 10px 0px;
         margin: 0 30px ;
         background:  var(--color_1);
         width:;
@@ -3284,13 +3327,7 @@ ul li .question{
      .final_mobil{
         margin: 0
     }
-     .modal-content{
-     border-radius: ;
-    border-color: transparent;
-        width:90% ;
-         margin: 0 auto;
-         
-}
+    
     .instrucciones{
     width: 85%;
     margin: 0 auto;
@@ -3316,23 +3353,9 @@ ul li .question{
 .intrucciones_ultimo{
     padding-bottom: 10px;
 }
-.modal-header{
-    height: 40px;
-    background:;
-    display: flex;
-    align-items: center; 
-}
-.modal-footer{
-    background:  ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: ;
-    height: 140px;
-    padding: 0;
-    
 
-}
+    
+    
     .label_horas{
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -3361,34 +3384,33 @@ ul li .question{
     justify-content: center;
     padding:20px 0 30px 0px;
 }
-.modal-body{
-    background: var(--color_6);
-    height: 
+
+   
     
-}
+    
     #paypal-button-container{
         margin-top:10px;
     }
     .horas_y_precios{
-    width: 85%;
+    width: 92%;
     background-image: url("sesion_mobil_fondo.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     margin: 0 auto;
-        height: 230px;
+        height: ;
     
      
 }
     #box{
-        background: ;
-        width: 190px;
+        background:  ;
+        width: 279px;
         height: 40px;
         opacity: ;
     }
     .contador{
     padding-top: 33px;
     display: flex;
-    
+    background: ;
     align-items: center;
     flex-direction: column;
    
@@ -3453,22 +3475,7 @@ ul li .question{
         padding: 12px 0;
     }
     
-    .modal-footer-mobil{  
-    width: 93%;
-    margin: 0 auto;
-    justify-content: space-between;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: ;
-    background: ;
-    height: auto}
-    
-    .descarga_mobil_final{
-        background: ;
-        margin: 0;
-        padding: ;
-       
-    }
+   
     .fa-picture-o{
         color: ;
         padding: 0px
@@ -3506,4 +3513,63 @@ ul li .question{
         background: ;
         margin-bottom: 30px ;
     }
+    
+    
+    
+    .descarga{
+        background: ;
+        padding: 7px 0px;
+        margin-bottom: 20px;
+        width: 48%
+    }
+    
+     
+
+    
+     .modal-footer-mobil{  
+    width: 91%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: ;
+    background:re ;
+    
+    }
+    .modal-footer-sesiones-individuales{
+        background: red;
+        display: flex;
+        width: 40px
+    }
+    
+     .modal_sin_margen{
+    margin: 0px;
+    padding: 0px 0 0px 0;
+    
+}
+    .modal-header{
+    height: 40px;
+    background:;
+    display: flex;
+    align-items: center; 
+}
+.modal-footer{
+    background: none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ;
+    height: ;
+    padding: 0;
+    
+
+}
+     .modal-content{
+     border-radius: ;
+    border-color: transparent;
+        width:90% ;
+         margin: 0 auto;
+         
+}
+    
 }
