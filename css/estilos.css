@@ -330,7 +330,7 @@ hr{
 .descarga {
     
     color:var(--color_1);
-    padding: 7px 50px;
+    padding: 7px 80px;
     text-decoration: none;
     background: white ;
     
@@ -1697,7 +1697,6 @@ header nav a:hover{
     }
             
         
-        
 }
 
 /*Tablet en horizontal*/
@@ -2025,7 +2024,7 @@ header nav a:hover{
     } 
     .descarga{
         background: ;
-        padding: 5px 20px;
+        padding: 5px 30px;
         margin: 0 0 0 15px;
     }
         
@@ -2684,7 +2683,7 @@ ul li .question{
     .modal-footer-tablet{
         background:;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         height: px    } 
     .descarga{
         background: ;
@@ -3366,6 +3365,8 @@ ul li .question{
 }
     .label_online, .label_presencial{
         font-size: 15px;
+        background: ;
+        margin: 5px;
     }
 .presencial_contenedor, .online_contenedor{
     display: flex;
@@ -3373,24 +3374,28 @@ ul li .question{
     align-items:center;
     margin:0px 0 0 0;
     padding:0px;
+    background: 
+}
+    
+    .online_contenedor{
+   background: ;
+        margin-top: 10px;
 }
     #onlineInput, #presencialInput{
         color: ;
         padding: 6px 0px;
         font-size: 14px;
+        width: 50%;
+        margin: 0px 0;
     }
 .presencial_online_contenedores{
     display: flex;
     justify-content: center;
     padding:20px 0 30px 0px;
+    flex-direction: column;
 }
 
    
-    
-    
-    #paypal-button-container{
-        margin-top:10px;
-    }
     .horas_y_precios{
     width: 92%;
     background-image: url("sesion_mobil_fondo.jpg");
@@ -3403,7 +3408,7 @@ ul li .question{
 }
     #box{
         background:  ;
-        width: 279px;
+        width: 40px;
         height: 40px;
         opacity: ;
     }
@@ -3497,12 +3502,6 @@ ul li .question{
         width: 100%;
         margin: 0
     }
-    .paypal-button-container{
-        background: ;
-        margin-bottom: 20px;
-        display: flex;
-        
-    }
     .talleres_list input{
         padding: 15px 0
     }
@@ -3518,12 +3517,15 @@ ul li .question{
     
     .descarga{
         background: ;
-        padding: 7px 0px;
-        margin-bottom: 20px;
-        width: 48%
+        padding: 10px 20px;
+        margin-bottom: 0px;
+        width: 100%
     }
     
-     
+    .fa-picture-o{
+        color:;
+        padding-left: 8px;
+    }
 
     
      .modal-footer-mobil{  
@@ -3567,7 +3569,7 @@ ul li .question{
      .modal-content{
      border-radius: ;
     border-color: transparent;
-        width:90% ;
+        width:100% ;
          margin: 0 auto;
          
 }
